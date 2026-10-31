@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Create your account</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="login.css">
+<link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+<section class="stage" id="stage" aria-hidden="true">
+  <div class="crew">
+    <div class="pal tall"><div class="eyes"><div class="eye"><div class="pupil"></div></div><div class="eye"><div class="pupil"></div></div></div></div>
+    <div class="pal round"><div class="eyes"><div class="eye"><div class="pupil"></div></div><div class="eye"><div class="pupil"></div></div></div></div>
+    <div class="pal half"><div class="eyes"><div class="eye"><div class="pupil"></div></div><div class="eye"><div class="pupil"></div></div></div></div>
+  </div>
+</section>
+
+<main class="panel">
+  <form id="form" novalidate>
+    <h1>Create your account</h1>
+    <p class="sub">It takes less than a minute.</p>
+
+    <div class="field">
+      <input id="name" type="text" placeholder=" " autocomplete="name">
+      <label for="name">Full name</label>
+    </div>
+
+    <div class="field">
+      <input id="email" type="email" placeholder=" " autocomplete="email">
+      <label for="email">Email</label>
+    </div>
+
+    <div class="field">
+      <input id="pass" type="password" placeholder=" " autocomplete="new-password">
+      <label for="pass">Password</label>
+      <button type="button" class="toggle" id="toggle" aria-label="Show passwords">Show</button>
+    </div>
+
+    <div class="meter" aria-hidden="true"><span id="bar"></span></div>
+    <p class="hint" id="hint">Use at least 8 characters.</p>
+
+    <div class="field">
+      <input id="confirm" type="password" placeholder=" " autocomplete="new-password">
+      <label for="confirm">Confirm password</label>
+    </div>
+
+    <p class="error" id="error" role="alert"></p>
+    <button class="go" id="go" type="submit">Create account</button>
+    <p class="foot">Already have an account? <a href="index.html">Log in</a></p>
+  </form>
+</main>
+
+<script src="signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+/* Sign-up page additions. Everything else comes from login.css */
+.panel{overflow-y:auto}
+
+.meter{height:6px;border-radius:99px;background:var(--line);overflow:hidden;margin:-6px 0 6px}
+.meter span{display:block;height:100%;width:0;border-radius:99px;background:#e5484d;transition:width .3s ease, background .3s ease}
+.meter span[data-level="1"]{width:25%;background:#e5484d}
+.meter span[data-level="2"]{width:50%;background:#f5a524}
+.meter span[data-level="3"]{width:75%;background:var(--lemon)}
+.meter span[data-level="4"]{width:100%;background:var(--teal)}
+
+.hint{color:var(--muted);font-size:.85rem;margin:0 0 18px}
